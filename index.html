@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kim Gyuhun · Game Sound Designer</title>
+<meta name="description" content="Game Sound Designer · Voice (Korean / English)">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+:root { --bg: #f6f7f6; --fg: #141714; --dim: #5b645e; --line: #d6dcd8; --line2: #b9c2bc; --g: #00a85a; --mark: #00D86F;
+  --sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0f1210; --fg: #e6ebe7; --dim: #93a097; --line: #26302a; --line2: #3a463e; --g: #00D86F; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 16px/1.7 var(--sans); padding-inline: 20px; word-break: keep-all; overflow-wrap: anywhere; }
+a { color: var(--g); text-underline-offset: 3px; }
+h1, h2, h3, p { margin: 0; }
+img { max-width: 100%; display: block; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 0 72px; }
+.top { display: flex; justify-content: space-between; align-items: center; padding-block: 18px; border-bottom: 1px solid var(--line); font: 500 13px var(--mono); }
+.top a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--line2); }
+.hero { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; padding-block: 48px 40px; border-bottom: 2px solid var(--fg); align-items: end; }
+.hero .txt { grid-column: 1 / span 4; display: grid; gap: 14px; }
+.hero .role { font: 500 13px var(--mono); color: var(--g); }
+.hero h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.05; letter-spacing: -.02em; font-weight: 700; }
+.hero .lead { font-size: 18px; color: var(--dim); max-width: 46ch; }
+.hero .cta { display: flex; gap: 12px 24px; flex-wrap: wrap; font-weight: 600; }
+.hero figure { grid-column: 5 / span 2; margin: 0; }
+.hero figure img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+section { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; padding-block: 44px; border-bottom: 1px solid var(--line); }
+section > h2 { grid-column: 1 / span 1; font-size: 15px; font-weight: 700; line-height: 1.4; }
+section > .b { grid-column: 2 / span 5; min-width: 0; display: grid; gap: 20px; }
+.slot { border-top: 3px solid var(--mark); padding-top: 18px; }
+.slot p { font-size: 19px; line-height: 1.6; max-width: 60ch; }
+.weeks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.weeks div { border-top: 1px solid var(--line2); padding-top: 10px; }
+.weeks b { font: 500 13px var(--mono); color: var(--g); display: block; }
+.weeks p { font-size: 14px; margin-top: 4px; }
+ul.list { margin: 0; padding: 0; border-top: 1px solid var(--line2); }
+ul.list li { list-style: none; padding-block: 10px; border-bottom: 1px solid var(--line); }
+.vids { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; }
+.vids a { color: var(--fg); text-decoration: none; display: grid; gap: 8px; }
+.vids img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); }
+.vids a:hover img { border-color: var(--g); }
+.vids b { font-weight: 600; }
+.vids span { font-size: 13px; color: var(--dim); }
+.note { font-size: 13px; color: var(--dim); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+td { padding: 12px 16px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.y { font: 500 13px var(--mono); color: var(--dim); width: 56px; }
+td.n { font-weight: 600; width: 34%; }
+.tbl { border-top: 1px solid var(--line2); overflow-x: auto; }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.pair figure { margin: 0; }
+.pair figcaption { font-size: 13px; color: var(--dim); margin-top: 8px; }
+.mail { font: 500 clamp(20px, 3vw, 28px) var(--mono); }
+.copy { all: unset; cursor: pointer; font: 500 12px var(--mono); color: var(--g); border-bottom: 1px solid var(--g); margin-left: 12px; }
+footer { padding-block: 28px; font-size: 12px; color: var(--dim); }
+@media (max-width: 820px) {
+  .hero .txt, .hero figure, section > h2, section > .b { grid-column: 1 / -1; }
+  .hero figure { max-width: 240px; }
+  .weeks, .vids, .pair { grid-template-columns: minmax(0, 1fr); }
+  td.n { width: auto; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><span>Kim Gyuhun · 김규헌</span><a href="ko.html">한국어</a></div>
+  <header class="hero">
+    <div class="txt">
+      <p class="role">Game Sound Designer · Voice (Korean / English)</p>
+      <h1>Kim Gyuhun</h1>
+      <p class="lead">I design game sound and put it in the engine myself: punchy SFX, UI and ambience, plus voice recording, editing and directing. Based in Korea, working remotely with teams anywhere.</p>
+      <p class="cta"><a href="mailto:bluepop98@naver.com">bluepop98@naver.com</a><a href="https://mayson1209.github.io/portfolio/">Full portfolio (Korean) ↗</a></p>
+    </div>
+    <figure><img src="img/me.jpg" alt="Kim Gyuhun"></figure>
+  </header>
+
+  <section>
+    <h2>Open slots · October 2026 – February 2027</h2>
+    <div class="b">
+      <div class="slot"><p>I'm joining three indie projects for free, six weeks each. You get finished sound inside your build. I ask for a credit, permission to show the work in my reel, and a short testimonial when we're done.</p></div>
+      <h3 class="note">How the six weeks go</h3>
+      <div class="weeks"><div><b>Week 1</b><p>Play the build, agree on a sound list and the feel you want.</p></div><div><b>Weeks 2–5</b><p>Design the sounds and implement them in your engine, with a playable check every week.</p></div><div><b>Week 6</b><p>Loudness and mix pass, clean file naming, handoff notes so you can keep adding sounds.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I can take on</h2>
+    <div class="b"><ul class="list"><li>Combat, skill, UI and interaction SFX</li><li>Ambience and foley</li><li>Implementation in Unreal or Unity (Wwise / FMOD on request)</li><li>Voice: recording direction, dialogue editing and cleanup, phone / radio / intercom processing</li><li>Korean voice and localization support for teams shipping in Korea</li></ul></div>
+  </section>
+
+  <section>
+    <h2>Sound redesigns</h2>
+    <div class="b">
+      <div class="vids"><a href="https://www.youtube.com/watch?v=VdOpEjBH0aU"><img src="img/v1.jpg" alt="Wuthering Waves" loading="lazy"><b>Wuthering Waves</b><span>In-game combat · Unreal-based title</span></a><a href="https://www.youtube.com/watch?v=j7EaNF1skhE"><img src="img/v2.jpg" alt="The First Berserker: Khazan" loading="lazy"><b>The First Berserker: Khazan</b><span>Hardcore action combat</span></a><a href="https://www.youtube.com/watch?v=qJQO0FiphRs"><img src="img/v3.jpg" alt="The Last of Us Part II" loading="lazy"><b>The Last of Us Part II</b><span>Stealth and survival · with a voice-direction plan</span></a><a href="https://www.youtube.com/watch?v=I6DvBLc24bA"><img src="img/v4.jpg" alt="GODDESS OF VICTORY: NIKKE" loading="lazy"><b>GODDESS OF VICTORY: NIKKE</b><span>Gacha UI and in-game</span></a><a href="https://www.youtube.com/watch?v=n3xphW5duuE"><img src="img/v5.jpg" alt="Genshin · Wuthering Waves · PGR" loading="lazy"><b>Genshin · Wuthering Waves · PGR</b><span>Skill SFX across three games</span></a></div>
+      <p class="note">All sound in these clips was replaced by me. Each video lists the DAW and what I changed.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Credits</h2>
+    <div class="b">
+      <div class="tbl"><table><tr><td class="y">2026</td><td class="n">MapleStory</td><td>Skill SFX for the July update, about 110 sounds (Warrior, Pirate, Thief) · via Studio Monkey</td></tr><tr><td class="y">2026</td><td class="n">Samsung Bixby character voice</td><td>9,000 lines: recording direction, editing, cleanup and final QC, on my own</td></tr><tr><td class="y">2026</td><td class="n">Blue Archive · final chapter</td><td>Voice editing and QC (chapters 1, 3 and 4)</td></tr><tr><td class="y">2026</td><td class="n">Overgeared (템빨: 오버기어드, Nexon)</td><td>Voice editing and QC, about 2,000 lines in two weeks</td></tr><tr><td class="y">2026</td><td class="n">Pizza Oof! (Steam Early Access)</td><td>SFX and implementation in Unreal Engine</td></tr><tr><td class="y">2026</td><td class="n">GMTK Game Jam 2026 · Flamageddon</td><td>Sole sound designer (SFX and music) in a team of five · top 8.9% of 10,532 entries</td></tr><tr><td class="y">2026</td><td class="n">GXG2026 Gamesound AI contest</td><td>Gold award · led SFX and voice for a team I put together</td></tr></table></div>
+      <div class="pair">
+        <figure><a href="https://alegruz.itch.io/flamageddon"><img src="img/gmtk.jpg" alt="Flamageddon" loading="lazy"></a><figcaption>GMTK Game Jam 2026 · Flamageddon · <a href="https://alegruz.itch.io/flamageddon">Play Flamageddon ↗</a></figcaption></figure>
+        <figure><img src="img/gxg.jpg" alt="GXG2026" loading="lazy"><figcaption>GXG2026 Gamesound AI · Gold</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    <div class="b"><p>Nuendo · Reaper · Cubase · iZotope RX · Unreal Engine · Unity · Wwise and FMOD (in active practice). I also build my own audio tools, such as a library search app and a footstep generator.</p></div>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <div class="b"><p>Korean (native) · English (working level; booth presentations and interpreting at ChinaJoy 2026)</p></div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="b">
+      <p class="mail"><a href="mailto:bluepop98@naver.com">bluepop98@naver.com</a><button class="copy" type="button" data-copy="bluepop98@naver.com">copy</button></p>
+      <p class="note">Email is the fastest way to reach me. I reply within a day (Korean Standard Time).</p>
+    </div>
+  </section>
+  <footer>© 2026 Kim Gyuhun</footer>
+</div>
+<script>
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-copy]'); if (!b) return;
+  var t = b.getAttribute('data-copy'), old = b.textContent;
+  var ok = function () { b.textContent = 'copied'; setTimeout(function () { b.textContent = old; }, 1500); };
+  if (navigator.clipboard) navigator.clipboard.writeText(t).then(ok, function () {});
+});
+</script>
+</body>
+</html>
